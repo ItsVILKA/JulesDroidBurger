@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">JulesDroidBurger</string>
+    <string-array name="burger_list">
+        <item>Burger du chef</item>
+        <item>Cheese Burger</item>
+        <item>Burger Montagnard</item>
+        <item>Burger Italien</item>
+        <item>Burger Végétarien</item>
+    </string-array>
+    <string name="title_activity_confirmation">ConfirmationActivity</string>
+</resources>
+

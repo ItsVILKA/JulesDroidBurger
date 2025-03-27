@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/formulaireLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Logo de la société -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_jules"
+            android:layout_gravity="center"
+            android:contentDescription="Logo de DroidBurger"
+            android:layout_marginBottom="0dp" />
+
+
+        <!-- Texte titre -->
+        <TextView
+            android:id="@+id/texteTitre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completez d'abord vos informations"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Champ Nom -->
+        <EditText
+            android:id="@+id/editTextNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nom" />
+
+        <!-- Champ Prénom -->
+        <EditText
+            android:id="@+id/editTextPrenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prénom" />
+
+        <!-- Champ Adresse -->
+        <EditText
+            android:id="@+id/editTextAdresse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Adresse" />
+
+        <!-- Champ Téléphone -->
+        <EditText
+            android:id="@+id/editTextTelephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Numéro de téléphone"
+            android:inputType="phone" />
+
+        <!-- Liste déroulante des burgers -->
+        <Spinner
+            android:id="@+id/spinnerBurger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+        <!-- Quantité -->
+        <EditText
+            android:id="@+id/editTextQuantite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantité"
+            android:inputType="number" />
+
+        <!-- Heure de livraison -->
+        <EditText
+            android:id="@+id/editTextHeure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Heure de livraison (ex : 19:30)"
+            android:inputType="time" />
+
+        <!-- Bouton Envoyer -->
+        <Button
+            android:id="@+id/btnValider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valider la commande"
+            android:textColor="#000000"
+            android:backgroundTint="#FFD200"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>
